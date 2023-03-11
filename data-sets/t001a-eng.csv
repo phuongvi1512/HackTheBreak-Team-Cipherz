@@ -1,0 +1,31 @@
+﻿Column1,Column2,Column3,Column4,Column5,Column6,Column7
+,Employed,,Unemployed,,"Unemployment
+rates",
+Occupation,"Feb.
+2022","Feb.
+2023","Feb.
+2022","Feb.
+2023","Feb.
+2022","Feb.
+2023"
+"Total, 16 years and over(1)","156,942","159,713","6,782","6,465",4.1,3.9
+"Management, professional, and related occupations","67,754","69,986","1,490","1,406",2.2,2.0
+"      Management, business, and financial operations occupations","29,131","30,137",638,632,2.1,2.1
+      Professional and related occupations,"38,624","39,848",852,774,2.2,1.9
+Service occupations,"24,228","25,292","1,400","1,295",5.5,4.9
+Sales and office occupations,"31,383","30,220","1,311","1,327",4.0,4.2
+      Sales and related occupations,"14,927","14,185",565,596,3.6,4.0
+      Office and administrative support occupations,"16,456","16,035",747,731,4.3,4.4
+"Natural resources, construction, and maintenance occupations","14,091","14,190",917,902,6.1,6.0
+"      Farming, fishing, and forestry occupations",963,946,119,85,11.0,8.2
+      Construction and extraction occupations,"8,286","8,474",664,713,7.4,7.8
+"      Installation, maintenance, and repair occupations","4,842","4,769",134,104,2.7,2.1
+"Production, transportation, and material moving
+occupations","19,485","20,025","1,270","1,073",6.1,5.1
+       Production occupations,"7,993","8,380",413,421,4.9,4.8
+     Transportation and material moving occupations,"11,492","11,645",856,651,6.9,5.3
+"Footnotes
+(1) Persons with no previous work experience and persons whose last job was in the U.S. Armed Forces are included in the unemployed total.",,,,,,
+"NOTE: Updated population controls are introduced annually with the release of January data. Effective with January 2020 data, occupations reflect the
+introduction of the 2018 Census occupational classification system into the Current Population Survey, or household survey. This classification system is derived
+from the 2018 Standard Occupational Classification (SOC). No historical data have been revised. Data for 2020 are not strictly comparable with earlier years.",,,,,,

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unemployment Rates</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+      .bar {
+        fill: steelblue;
+      }
+
+      .bar:hover {
+        fill: brown;
+      }
+
+      .axis {
+        font-size: 14px;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: black;
+        stroke-width: 2px;
+        shape-rendering: crispEdges;
+      }
+
+      .axis text {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unemployment Rates</h1>
+    <div id="chart"></div>
+    <script>
+      var data = {{ data | tojson }};
+      var width = 800;
+      var height = 400;
+      var margin = { top: 50, right: 50, bottom: 50, left: 50 };
+
+      var xScale = d3.scaleBand()
+        .domain(data.map(function(d) { return d['countries']; }))
+        .range([0, width])
+        .padding(0.2);
+
+      var yScale = d3.scaleLinear()
+        .domain([0, d3.max(data, function(d) { return d['unemploymentRates']; })])
+        .range([height, 0]);
+
+      var xAxis = d3.axisBottom(xScale)
+        .tickSize(0);
+
+      var yAxis = d3.axisLeft(yScale)
+        .tickSize(-width);
+
+      var chart = d3.select('#chart')
+        .append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        chart.append('g')
+          .attr('class', 'axis x-axis')
+          .attr('transform', 'translate(0,' + height + ')')
+          .call(xAxis);
+
+        chart.append('g')
+            .attr('class', 'axis y-axis')
+            .call(yAxis);
+
+        chart.selectAll('.bar')
+            .data(data)
+            .enter()
+            .append('rect')
+            .attr('class', 'bar')
+            .attr('x', function(d) { return xScale(d.countries); })
+            .attr('y', function(d) { return yScale(d.unemploymentRates); })
+            .attr('width', xScale.bandwidth())
+            .attr('height', function(d) { return height - yScale(d.unemploymentRates); });
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unemployment Rates</title>
+  </head>
+  <body>
+    <h1>Select Countries</h1>
+    <form action="/chart" method="GET">
+      {% for country in countries %}
+        <input type="checkbox" name="country" value="{{ country }}">{{ country }}<br>
+      {% endfor %}
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

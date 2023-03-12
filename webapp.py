@@ -24,13 +24,15 @@ def chart():
     # Filter the dataframe to only include the selected countries
     filtered_df = df[df['countries'].isin(selected_countries)]
 
-    # Group the data by country and compute the average unemployment rate
-    avg_unemployment_rates = filtered_df.groupby('countries').mean().reset_index()
-
     # Convert the data to a list of dictionaries
-    data = avg_unemployment_rates.to_dict('records')
+    data = filtered_df.to_dict('records')
 
     return render_template('chart.html', data=data)
+
+@app.route('/time_chart')
+def time_chart():
+    selected_country = request.args.get('country')
+    return render_template('time_chart.html', country = selected_country)
 
 if __name__ == '__main__':
     app.run(debug=True)

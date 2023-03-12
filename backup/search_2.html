@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unemployment Rates Comparison</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/styles.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<h1>Unemployment Rates Comparison</h1>
+	<form id="search-form">
+		<label for="countries">Select countries:</label>
+		<select id="countries" name="countries" multiple>
+			<option value="US">United States</option>
+			<option value="MX">Mexico</option>
+			<option value="CA">Canada</option>
+		</select>
+		<button type="submit">Search</button>
+	</form>
+	<div id="chart"></div>
+	<script src="../static/scripts/main.js"></script>
+</body>
+</html>

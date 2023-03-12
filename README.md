@@ -16,7 +16,7 @@ what technology we use:
 What we have developed:
   - terminal: more interactive. To check, you can run **test.py**
   - web GUI: We want to implement what we have done in the terminal into the Web GUI. The UI is simple so far.
-    you can run **webapp.pyy**.
+    you can run **webapp.py**.
 
 
 

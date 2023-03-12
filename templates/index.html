@@ -12,5 +12,15 @@
       <br>
       <input type="submit" value="Submit">
     </form>
+    
+    <h1>Compare country overtime </h1>
+    <form action="/time_chart" method="GET">
+      <select name="country">
+        {% for country in countries %}
+          <option value="{{ country }}">{{ country }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <input type="submit" value="Submit">
   </body>
 </html>

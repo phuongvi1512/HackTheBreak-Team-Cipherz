@@ -1,7 +1,7 @@
 # HackTheBreak-Team-Cipherz
 compare unemployment rate between countries or over the time
 
-Authors: Julie, Phuong Vi Dang
+Authors: Julie Wu, Phuong Vi Dang
 
 Description: we want to show the countries' unemployment rate over the time or compare different countries' unemployment rate. If user wants to move to new country, they have better idea of the job market of different countries
 

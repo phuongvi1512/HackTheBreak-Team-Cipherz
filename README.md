@@ -7,7 +7,7 @@ Description: we want to show the countries' unemployment rate over the time or c
 
 Acknowledgement: 
  the data we collect is from Kaggle
-  We are using ChatGPT and online resources to help with the project
+  .We are using online resources to help with the project
 
 what technology we use:
  Python libararies: Panda, matplotlib, flask
